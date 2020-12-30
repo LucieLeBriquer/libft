@@ -6,7 +6,7 @@
 /*   By: lle-briq <lle-briq@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/20 11:26:34 by lle-briq          #+#    #+#             */
-/*   Updated: 2020/11/16 12:09:17 by lle-briq         ###   ########.fr       */
+/*   Updated: 2020/12/30 14:46:01 by lle-briq         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
-	size_t d;
-	size_t s;
-	size_t i;
+	size_t	d;
+	size_t	s;
+	size_t	i;
 
 	d = ft_strlen(dst);
 	s = ft_strlen(src);

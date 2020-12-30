@@ -6,7 +6,7 @@
 /*   By: lle-briq <lle-briq@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/20 11:14:48 by lle-briq          #+#    #+#             */
-/*   Updated: 2020/10/20 11:14:57 by lle-briq         ###   ########.fr       */
+/*   Updated: 2020/12/30 14:49:28 by lle-briq         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ static int	itoa_size(unsigned int nb, short int sg)
 	return (1 + itoa_size(nb / 10, sg));
 }
 
-char		*ft_itoa(int n)
+char	*ft_itoa(int n)
 {
 	unsigned int	nb;
 	short int		sg;
@@ -31,7 +31,7 @@ char		*ft_itoa(int n)
 	sg = 1 - 2 * (n < 0);
 	nb = sg * n;
 	l = itoa_size(nb, sg);
-	res = malloc((l + 1) * sizeof(char));
+	res = malloc((l + 1)*sizeof(char));
 	if (!res)
 		return (NULL);
 	res[l] = '\0';
